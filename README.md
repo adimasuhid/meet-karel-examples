@@ -2,6 +2,8 @@
 
 Learn simple programming techniques using Javascript and Karel
 
+![screen shot 2018-07-31 at 9 29 36 pm](https://user-images.githubusercontent.com/2517299/43462648-3ca0697c-9509-11e8-9aa1-ec08aa83fbf3.png)
+
 ## Commands
 
 ```
