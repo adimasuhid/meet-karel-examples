@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Karel the Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: sans-serif;
+                margin: 0px
+            }
+            .row {
+                display: flex;
+            }
+           
+            .column {
+                flex: 50%;
+                height: 100vh;
+            }
+            #editor-container {
+              position: relative;
+              height: 100vh;
+            }
+            #editor {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+            #game {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            #game canvas {
+                border: 15px solid beige; 
+            }
+            #commands {
+              text-align: center;
+              margin-bottom: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+          <div class="column">
+            <div id="editor-container">
+              <div id="editor">// This is where your code lives</div>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div id="commands">
+              <h1>Meet Karel</h1>
+
+              <button id="run">Run</button>
+              <button id="reset">Reset</button>
+            </div>
+            <div id="game"></div>
+          </div>
+        </div>
+
+        <div id="asset-source" style="display: none;">
+          <img id="floor_tile" src="../assets/floor_grass.png">
+          <img id="tree_S" src="../assets/tree_S_cut.png">
+          <img id="flower_S" src="../assets/flower_S.png">
+          <img id="karel_dead" src="../assets/karel_dead.png">
+          <img id="karel_alive_S_0" src="../assets/karel_S_0.png">
+          <img id="karel_alive_S_1" src="../assets/karel_S_1.png">
+          <img id="karel_alive_N_0" src="../assets/karel_N_0.png">
+          <img id="karel_alive_N_1" src="../assets/karel_N_1.png">
+          <img id="karel_alive_E_0" src="../assets/karel_E_0.png">
+          <img id="karel_alive_E_1" src="../assets/karel_E_1.png">
+          <img id="karel_alive_W_0" src="../assets/karel_W_0.png">
+          <img id="karel_alive_W_1" src="../assets/karel_W_1.png">
+        </div>
+        <script src="../../../dist/karel.js"></script>
+        <script src="../plugins/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./setup.js"></script>
+    </body>
+</html>
